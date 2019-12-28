@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Practical7Wed2_5.3_GuessTheWord_Data_Binding.iml" filepath="$PROJECT_DIR$/Practical7Wed2_5.3_GuessTheWord_Data_Binding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practical7Wed2_5.4_GuessTheWord_LiveData.iml" filepath="$PROJECT_DIR$/Practical7Wed2_5.4_GuessTheWord_LiveData.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

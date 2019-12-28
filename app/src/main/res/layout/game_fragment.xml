@@ -53,18 +53,18 @@
             android:layout_height="wrap_content"
             android:animateLayoutChanges="true"
             android:fontFamily="sans-serif"
+            android:text="@{@string/quote_format(gameViewModel.word)}"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textColor="@color/black_text_color"
             android:textSize="34sp"
             android:textStyle="normal"
-            app:layout_constraintBottom_toTopOf="@+id/score_text"
+            app:layout_constraintBottom_toBottomOf="@+id/timer_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/word_is_text"
             app:layout_constraintVertical_chainStyle="packed"
-            tools:text="&quot;Tuna&quot;"
-            android:text="@{@string/quote_format(gameViewModel.word)}" />
+            tools:text="&quot;Tuna&quot;" />
 
         <TextView
             android:id="@+id/timer_text"
@@ -80,6 +80,7 @@
             app:layout_constraintBottom_toTopOf="@+id/score_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:text="@{gameViewModel.currentTimeString}"
             tools:text="0:00" />
 
         <TextView
@@ -143,6 +144,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline"
             android:onClick="@{() -> gameViewModel.onGameFinish()}" />
+
+        <TextView
+            android:id="@+id/textHint"
+            android:layout_width="271dp"
+            android:layout_height="55dp"
+            android:text="@{gameViewModel.wordHint}"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/timer_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/word_text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
